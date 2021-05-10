@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.container {
+    font-family: 'Roboto Mono',monospace, sans-serif;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+background-image: 
+    url(https://i.postimg.cc/K8DPntP6/z25793674-V-pieniadze-zdjecie-ilustracyjne.jpg);
+}
