@@ -13,23 +13,23 @@
 
         switch (currency) {
             case "EUR":
-                return (plnAmount / rateEUR).toFixed(2);
+                return (plnAmount / rateEUR)
 
             case "GBP":
-                return (plnAmount / rateGBP).toFixed(2);
+                return (plnAmount / rateGBP)
 
             case "USD":
-                return (plnAmount / rateUSD).toFixed(2);
+                return (plnAmount / rateUSD)
 
             case "UAH":
-                return (plnAmount / rateUAH).toFixed(2);
+                return (plnAmount / rateUAH)
 
         }
     }
 
     const updateResultText = (result, currency) => {
         const resultElement = document.querySelector(".js-result");
-        resultElement.innerText = `Wynik:${result.toFixed(2)} ${currency.toCase()}`;
+        resultElement.innerHTML = `Wynik:${result.toFixed(2)} ${currency.toUpperCase()}`;
     };
 
     const onFormSubmit = (event) => {
@@ -49,8 +49,8 @@
     }
 
 const onFormReset = () => {
-    resultElement.innerText = "Wynik:";
-    const resultElement = document.querySelector(".js-result");
+        const resultElement = document.querySelector(".js-result");
+        resultElement.innerText = "Wynik:";
 }
 const init = () => {
 
